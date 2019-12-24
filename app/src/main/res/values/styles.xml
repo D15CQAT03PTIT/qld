@@ -27,6 +27,8 @@
         <item name="DialogSpotColor">@color/colorPrimaryDark</item>
         <item name="DialogSpotCount">4</item>
     </style>
-
+    <style name="FragmentDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@null</item>
+    </style>
     <string name="loading">Đang xử lý</string>
 </resources>

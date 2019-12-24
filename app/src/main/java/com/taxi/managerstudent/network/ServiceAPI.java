@@ -1,5 +1,6 @@
 package com.taxi.managerstudent.network;
 import com.taxi.managerstudent.models.StudentResponse;
+import com.taxi.managerstudent.models.SubjectResponse;
 
 import java.util.List;
 
@@ -19,6 +20,15 @@ public interface ServiceAPI {
 
     @POST("/api/student/save")
     Call<List<StudentResponse>> addStudent(@Body RequestBody responseBody);
+
+    @POST("/api/student/update")
+    Call<List<StudentResponse>> updateStudent(@Body RequestBody responseBody);
+
+    @POST("/api/subject/do-search")
+    Call<List<SubjectResponse>> getSubject(@Body RequestBody responseBody);
+
+    @POST("/api/sjm/save")
+    Call<RequestBody> addSubject(@Body RequestBody responseBody);
 
 
     @Headers({

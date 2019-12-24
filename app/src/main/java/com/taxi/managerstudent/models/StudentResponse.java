@@ -47,4 +47,32 @@ public class StudentResponse implements Serializable {
     public String getStudentEmail() {
         return studentEmail;
     }
+
+    public void setStudentId(int studentId) {
+        this.studentId = studentId;
+    }
+
+    public void setStudentCode(String studentCode) {
+        this.studentCode = studentCode;
+    }
+
+    public void setStudentName(String studentName) {
+        this.studentName = studentName;
+    }
+
+    public void setClassCode(String classCode) {
+        this.classCode = classCode;
+    }
+
+    public void setStudentAdress(String studentAdress) {
+        this.studentAdress = studentAdress;
+    }
+
+    public void setStudentBirhDay(String studentBirhDay) {
+        this.studentBirhDay = studentBirhDay;
+    }
+
+    public void setStudentEmail(String studentEmail) {
+        this.studentEmail = studentEmail;
+    }
 }
